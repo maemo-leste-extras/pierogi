@@ -25,6 +25,8 @@
 
 #include "mainwindow.h"
 #include "pirkeysetmanager.h"
+#include <QMetaObject>
+
 
 PIRAirConditionerForm::PIRAirConditionerForm(MainWindow *mw) :
   QWidget(0),

@@ -26,6 +26,8 @@
 #include "mainwindow.h"
 #include "pirkeysetmanager.h"
 #include "pirflashled.h"
+#include <QMetaObject>
+
 
 /*
 PIRCameraForm::PIRCameraForm(QWidget *parent) :

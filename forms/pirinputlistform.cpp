@@ -25,6 +25,7 @@
 
 #include "mainwindow.h"
 #include "pirkeysetmanager.h"
+#include <QMetaObject>
 
 PIRInputListForm::PIRInputListForm(
   MainWindow *mw)

@@ -56,7 +56,7 @@ PIRPowerSearchForm::PIRPowerSearchForm(
   ui->setupUi(this);
 
   // Make this a stacked window:
-  setAttribute(Qt::WA_Maemo5StackedWindow);
+//  setAttribute(Qt::WA_Maemo5StackedWindow);
   setWindowFlags(windowFlags() | Qt::Window);
 }
 

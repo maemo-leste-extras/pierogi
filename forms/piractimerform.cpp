@@ -26,6 +26,8 @@
 #include "mainwindow.h"
 #include "pirkeysetmanager.h"
 #include "pirackeyset.h"
+#include <QMetaObject>
+
 
 /*
 PIRACTimerForm::PIRACTimerForm(QWidget *parent) :
