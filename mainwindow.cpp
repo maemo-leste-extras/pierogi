@@ -25,8 +25,9 @@
 #include "ui_mainwindow.h"
 
 #include <QtCore/QCoreApplication>
+#include <QtWidgets>
 #include <QMutex>
-#include <QtGui/QMessageBox>
+//#include <QtGui/QMessageBox>
 #include <QPushButton>
 #include <QDialog>
 #include <QDialogButtonBox>
@@ -35,7 +36,8 @@
 #include <QKeyEvent>
 #include <QPushButton>
 #include <QStackedWidget>
-#include <QAbstractKineticScroller>
+//#include <QAbstractKineticScroller>
+#include <QScroller>
 
 //#include "pirtabwidget.h"
 
@@ -99,7 +101,7 @@ MainWindow::MainWindow(QWidget *parent)
   setupCustomTabWidget();
 
   // Make this a Maemo 5 stacked widget:
-  setAttribute(Qt::WA_Maemo5StackedWindow);
+//  setAttribute(Qt::WA_Maemo5StackedWindow);
 
   // Create the managers:
   myKeysets = new PIRKeysetManager();
@@ -288,14 +290,18 @@ void MainWindow::setOrientation(ScreenOrientation orientation)
         break;
 #else // QT_VERSION < 0x040702
     case ScreenOrientationLockPortrait:
-        attribute = Qt::WA_LockPortraitOrientation;
+       // attribute = Qt::WA_LockPortraitOrientation;
+	window()->setProperty("X-Maemo-Orientation", 1);
         break;
     case ScreenOrientationLockLandscape:
-        attribute = Qt::WA_LockLandscapeOrientation;
+       // attribute = Qt::WA_LockLandscapeOrientation;
+	window()->setProperty("X-Maemo-Orientation", 0);
         break;
     default:
     case ScreenOrientationAuto:
-        attribute = Qt::WA_AutoOrientation;
+       //  attribute = Qt::WA_AutoOrientation;
+	window()->setProperty("X-Maemo-Orientation", 2);
+
         break;
 #endif // QT_VERSION < 0x040702
     };
@@ -925,15 +931,19 @@ void MainWindow::switchToPanel(
 
 void MainWindow::updatePanelIndex()
 {
-  QAbstractKineticScroller *scroller =
-    flickableTabs->property("kineticScroller")
-      .value<QAbstractKineticScroller *>();
+#if 0
+  QScroller *scroller =
+    flickableTabs->property("KineticScroller")
+	.value<QScroller*>();
 
   if (scroller->state() == QAbstractKineticScroller::Inactive)
   {
     panelStackWidget->setCurrentIndex(
       flickableTabs->currentRow());
   }
+#endif
+QScroller::grabGesture(panelStackWidget,
+QScroller::LeftMouseButtonGesture);
 }
 
 

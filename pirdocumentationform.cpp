@@ -29,7 +29,7 @@ PIRDocumentationForm::PIRDocumentationForm(QWidget *parent) :
 {
   ui->setupUi(this);
 
-  setAttribute(Qt::WA_Maemo5StackedWindow);
+//  setAttribute(Qt::WA_Maemo5StackedWindow);
   setWindowFlags(windowFlags() | Qt::Window);
 }
 

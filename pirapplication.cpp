@@ -30,6 +30,7 @@
 #include <X11/Xatom.h>
 #include <QX11Info>
 #include <QTimer>
+#include <QApplication>
 
 
 PIRApplication::PIRApplication(
@@ -59,7 +60,7 @@ void PIRApplication::setupRockerSwitch(QWidget *window)
     1);
 }
 
-
+#if 0
 bool PIRApplication::x11EventFilter(
   XEvent *event)
 {
@@ -98,7 +99,7 @@ bool PIRApplication::x11EventFilter(
 
   return false;
 }
-
+#endif
 
 void PIRApplication::finishChangingKeyset()
 {

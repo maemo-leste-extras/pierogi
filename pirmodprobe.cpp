@@ -29,6 +29,8 @@
 #include <sstream>
 #include <errno.h>
 #include <sys/stat.h>
+#include <string.h>
+
 
 PIRModprobe::PIRModprobe()
   : successfullyLoadedModule(false)

@@ -34,6 +34,9 @@ timeval previousTime;
 #include <linux/types.h>
 #include <linux/ioctl.h>
 #include <fcntl.h>
+#include <string.h>
+#include <unistd.h>
+
 
 // Includes I'm using for error handling stuff:
 #include "pirexception.h"

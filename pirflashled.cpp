@@ -30,6 +30,9 @@
 #include "pirexception.h"
 #include <errno.h>
 #include <sstream>
+#include <string.h>
+#include <unistd.h>
+
 
 // The Flash LEDs are tied into video device 0, along with the camera itself:
 #define PATH_TO_FLASH_DEVICE "/dev/video0"

@@ -22,7 +22,8 @@
 
 #include "pirexception.h"
 
-#include <QtGui/QMessageBox>
+//#include <QtGui/QMessageBox>
+#include <QtWidgets/QMessageBox>
 
 /*
 PirException::PirException()

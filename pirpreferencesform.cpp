@@ -44,7 +44,7 @@ PIRPreferencesForm::PIRPreferencesForm(
 
   mainWindow = dynamic_cast<MainWindow *>(parent);
 
-  setAttribute(Qt::WA_Maemo5StackedWindow);
+//  setAttribute(Qt::WA_Maemo5StackedWindow);
   setWindowFlags(windowFlags() | Qt::Window);
 
   QSettings settings("pietrzak.org", "Pierogi");

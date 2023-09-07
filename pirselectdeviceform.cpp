@@ -48,7 +48,7 @@ PIRSelectDeviceForm::PIRSelectDeviceForm(
   ui->ssClosePushButton->hide();
 
   // Set some initial flags:
-  setAttribute(Qt::WA_Maemo5StackedWindow);
+//  setAttribute(Qt::WA_Maemo5StackedWindow);
   setWindowFlags(windowFlags() | Qt::Window);
 
   // push the list of makers into the make combo box:

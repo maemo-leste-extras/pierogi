@@ -3,9 +3,9 @@
 # file1.source = myfile
 # dir1.source = mydir
 #DEPLOYMENTFOLDERS = # file1 dir1
-loadModule.source = loadRX51Module unloadRX51Module
-loadModule.target = bin
-DEPLOYMENTFOLDERS = loadModule
+#loadModule.source = loadRX51Module unloadRX51Module
+#loadModule.target = bin
+#DEPLOYMENTFOLDERS = loadModule
 
 #symbian:TARGET.UID3 = 0xE0C0A793
 
@@ -25,7 +25,8 @@ DEPLOYMENTFOLDERS = loadModule
 # CONFIG += mobility
 # MOBILITY +=
 
-QT += maemo5
+QT += core gui maemo5 widgets x11extras
+LIBS += -lX11
 
 SOURCES += main.cpp mainwindow.cpp \
     pirmakenames.cpp \

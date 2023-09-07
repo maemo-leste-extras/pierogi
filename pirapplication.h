@@ -27,6 +27,8 @@
 #define PIRAPPLICATION_H
 
 #include <QApplication>
+#include <QX11Info>
+
 
 class QWidget;
 
@@ -41,8 +43,8 @@ public:
   void setupRockerSwitch(
     QWidget *window);
 
-  virtual bool x11EventFilter(
-    XEvent *event);
+//  virtual bool X11EventFilter(
+//    XEvent *event);
 
 signals:
   void increaseRockerPressed();
