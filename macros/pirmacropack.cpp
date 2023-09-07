@@ -242,7 +242,7 @@ bool PIRMacroPack::parseMacroPack(
 
         if (sr.attributes().hasAttribute("shortcut"))
         {
-          shortcut = sr.attributes().value("shortcut").at(0).toAscii();
+          shortcut = sr.attributes().value("shortcut").at(0).toLatin1();
         }
 
         if (sr.attributes().hasAttribute("button"))
