@@ -24,6 +24,8 @@
 #include "ui_pirrunmacrodialog.h"
 
 #include "mainwindow.h"
+#include <QMetaObject>
+
 
 PIRRunMacroDialog::PIRRunMacroDialog(
   MainWindow *mw)
