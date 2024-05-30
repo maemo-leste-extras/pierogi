@@ -1,5 +1,5 @@
 pierogi (1.1.42+leste1) unstable; urgency=low
-  * Qt5 port for Maemo-Leste
+  * Qt5 port for Maemo-Leste.
 
  -- John Pietrzak <jpietrzak8@gmail.com>  Thu, 30 May 2024 21:10:21 -0200
 
