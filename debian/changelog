@@ -1,3 +1,8 @@
+pierogi (1.1.42+leste1) unstable; urgency=low
+  * Qt5 port for Maemo-Leste
+
+ -- John Pietrzak <jpietrzak8@gmail.com>  Thu, 30 May 2024 21:10:21 -0200
+
 pierogi (1.1.41) unstable; urgency=low
   * Cleaned up the documentation; it now covers most of the functionality of Pierogi (other than the macros).  This is in preparation for pushing the current version into Testing, and then to Extras.
   * Added a new Grundig TV keyset (which is, in fact, identical to Philips TV Keyset 1).
